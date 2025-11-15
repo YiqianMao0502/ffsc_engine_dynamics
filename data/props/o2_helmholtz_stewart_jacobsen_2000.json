@@ -1,0 +1,8 @@
+{
+  "model": "helmholtz_o2_stewart_jacobsen",
+  "reference": "Stewart & Jacobsen (2000) oxygen reference EOS",
+  "params": {
+    "units": { "T": "K", "rho": "kg·m^-3", "p": "Pa" },
+    "coeffs": {}
+  }
+}

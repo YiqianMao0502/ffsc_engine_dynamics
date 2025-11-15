@@ -1,0 +1,28 @@
+{
+  "name": "transport_tm4513",
+  "model": "transport_poly_ln",
+  "source": {
+    "format": "NASA TM-4513 Table IV; ln(mu)=a ln T + b/T + c/T^2 + d; ln(lambda)=A ln T + B/T + C/T^2 + D",
+    "citation": "McBride, Gordon, Reno, NASA TM-4513 (1993), Table III & IV"
+  },
+  "species": [
+    {"name":"H2",  "mu_coeffs":[{"Tmin":300,"Tmax":1000,"a":null,"b":null,"c":null,"d":null},{"Tmin":1000,"Tmax":5000,"a":null,"b":null,"c":null,"d":null}],
+                 "k_coeffs":[{"Tmin":300,"Tmax":1000,"A":null,"B":null,"C":null,"D":null},{"Tmin":1000,"Tmax":5000,"A":null,"B":null,"C":null,"D":null}]},
+    {"name":"H",   "mu_coeffs":[{"Tmin":300,"Tmax":5000,"a":null,"b":null,"c":null,"d":null}],
+                 "k_coeffs":[{"Tmin":300,"Tmax":5000,"A":null,"B":null,"C":null,"D":null}]},
+    {"name":"O",   "mu_coeffs":[{"Tmin":300,"Tmax":5000,"a":null,"b":null,"c":null,"d":null}],
+                 "k_coeffs":[{"Tmin":300,"Tmax":5000,"A":null,"B":null,"C":null,"D":null}]},
+    {"name":"O2",  "mu_coeffs":[{"Tmin":300,"Tmax":1000,"a":null,"b":null,"c":null,"d":null},{"Tmin":1000,"Tmax":5000,"a":null,"b":null,"c":null,"d":null}],
+                 "k_coeffs":[{"Tmin":300,"Tmax":1000,"A":null,"B":null,"C":null,"D":null},{"Tmin":1000,"Tmax":5000,"A":null,"B":null,"C":null,"D":null}]},
+    {"name":"OH",  "mu_coeffs":[{"Tmin":300,"Tmax":5000,"a":null,"b":null,"c":null,"d":null}],
+                 "k_coeffs":[{"Tmin":300,"Tmax":5000,"A":null,"B":null,"C":null,"D":null}]},
+    {"name":"H2O", "mu_coeffs":[{"Tmin":300,"Tmax":1000,"a":null,"b":null,"c":null,"d":null},{"Tmin":1000,"Tmax":5000,"a":null,"b":null,"c":null,"d":null}],
+                 "k_coeffs":[{"Tmin":300,"Tmax":1000,"A":null,"B":null,"C":null,"D":null},{"Tmin":1000,"Tmax":5000,"A":null,"B":null,"C":null,"D":null}]},
+    {"name":"CO",  "mu_coeffs":[{"Tmin":300,"Tmax":1000,"a":null,"b":null,"c":null,"d":null},{"Tmin":1000,"Tmax":5000,"a":null,"b":null,"c":null,"d":null}],
+                 "k_coeffs":[{"Tmin":300,"Tmax":1000,"A":null,"B":null,"C":null,"D":null},{"Tmin":1000,"Tmax":5000,"A":null,"B":null,"C":null,"D":null}]},
+    {"name":"CO2", "mu_coeffs":[{"Tmin":300,"Tmax":1000,"a":null,"b":null,"c":null,"d":null},{"Tmin":1000,"Tmax":5000,"a":null,"b":null,"c":null,"d":null}],
+                 "k_coeffs":[{"Tmin":300,"Tmax":1000,"A":null,"B":null,"C":null,"D":null},{"Tmin":1000,"Tmax":5000,"A":null,"B":null,"C":null,"D":null}]},
+    {"name":"CH4", "mu_coeffs":[{"Tmin":300,"Tmax":1000,"a":null,"b":null,"c":null,"d":null},{"Tmin":1000,"Tmax":5000,"a":null,"b":null,"c":null,"d":null}],
+                 "k_coeffs":[{"Tmin":300,"Tmax":1000,"A":null,"B":null,"C":null,"D":null},{"Tmin":1000,"Tmax":5000,"A":null,"B":null,"C":null,"D":null}]}
+  ]
+}

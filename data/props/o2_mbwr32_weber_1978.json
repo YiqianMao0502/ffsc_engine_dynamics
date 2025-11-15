@@ -1,0 +1,23 @@
+{
+  "model": "mbwr32",
+  "reference": "Weber (NBSIR 78-882), oxygen mBWR-32",
+  "params": {
+    "R": 0.083145,
+    "R_unit": "L·bar·mol^-1·K^-1",
+    "T_unit": "K",
+    "rho_unit": "mol·L^-1",
+    "p_unit": "bar",
+    "rho_crit": null,
+    "rho_crit_unit": "mol·L^-1",
+    "b_unit": "various_per_equation", 
+    "b": {
+      "b1": null, "b2": null, "b3": null, "b4": null, "b5": null,
+      "b6": null, "b7": null, "b8": null, "b9": null, "b10": null,
+      "b11": null, "b12": null, "b13": null, "b14": null, "b15": null,
+      "b16": null, "b17": null, "b18": null, "b19": null, "b20": null,
+      "b21": null, "b22": null, "b23": null, "b24": null, "b25": null,
+      "b26": null, "b27": null, "b28": null, "b29": null, "b30": null,
+      "b31": null, "b32": null
+    }
+  }
+}

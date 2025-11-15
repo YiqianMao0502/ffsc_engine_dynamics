@@ -1,0 +1,10 @@
+{
+  "model": "pr_mixture",
+  "params": {
+    "species_thermo_source": "routeB_gri30_thermo_transport.json",
+    "mole_fractions": {
+      "CH4": 0.5,
+      "O2": 0.5
+    }
+  }
+}

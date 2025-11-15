@@ -1,0 +1,15 @@
+{
+  "schema": "nasa7",
+  "units": { "T": "K", "cp": "J/mol/K", "h": "J/mol", "s": "J/mol/K", "M": "kg/mol" },
+  "source": "NASA Glenn thermodynamic data sets (e.g., Burcat & Ruscic, or NASA CEA polynomial tables). Specify exact citation in each species file.",
+  "species": [
+    {
+      "name": "CH4",
+      "M": null,
+      "Tmid": null,
+      "low":  { "Tmin": null, "Tmax": null, "a1": null, "a2": null, "a3": null, "a4": null, "a5": null, "a6": null, "a7": null },
+      "high": { "Tmin": null, "Tmax": null, "a1": null, "a2": null, "a3": null, "a4": null, "a5": null, "a6": null, "a7": null },
+      "citation": ""
+    }
+  ]
+}

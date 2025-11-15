@@ -1,0 +1,16 @@
+{
+  "units": { "Tc": "K", "Pc": "Pa", "omega": "-", "M": "kg/mol" },
+  "species": {
+    "CH4":  { "Tc": 190.564,      "Pc": 4599200.0,   "omega": 0.01142,      "M": 0.016043 },
+    "O2":   { "Tc": 154.5993898,  "Pc": 5046410.521, "omega": 0.0222,       "M": 0.031999 },
+    "H2O":  { "Tc": 647.096,      "Pc": 22064000.0,  "omega": 0.3442920843, "M": 0.01801528 },
+    "CO":   { "Tc": 132.86,       "Pc": 3492800.0,   "omega": 0.0492,       "M": 0.0280101 },
+    "CO2":  { "Tc": 304.1282,     "Pc": 7377298.373, "omega": 0.22394,      "M": 0.0440095 },
+    "H2":   { "Tc": 33.14433269,  "Pc": 1296357.606, "omega": -0.219,       "M": 0.00201588 },
+
+    "OH":   { "Tc": null, "Pc": null, "omega": null, "M": 0.01700734 },
+    "O":    { "Tc": null, "Pc": null, "omega": null, "M": 0.015999 },
+    "H":    { "Tc": null, "Pc": null, "omega": null, "M": 0.00100784 }
+  },
+  "source_note": "CoolProp/REFPROP-aligned constants; radicals unsupported for cubic EOS."
+}

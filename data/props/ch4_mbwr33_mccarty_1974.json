@@ -1,0 +1,15 @@
+{
+  "model": "mbwr33_methane_mccarty",
+  "reference": "McCarty (1974) methane mBWR-33",
+  "params": {
+    "note": "Different structure from 32-term; will use dedicated evaluator.",
+    "units": {
+      "T": "K",
+      "rho": "mol·L^-1",
+      "p": "bar",
+      "R": "L·bar·mol^-1·K^-1"
+    },
+    "R": 0.083145,
+    "coeffs": {}
+  }
+}

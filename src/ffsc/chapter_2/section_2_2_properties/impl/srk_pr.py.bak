@@ -1,0 +1,81 @@
+from math import sqrt
+from typing import Dict, Any, List, Tuple
+from .registry import register, EOS
+
+# SI units throughout: T[K], v[m^3/mol], P[Pa]
+R = 8.314462618  # J/(mol·K) = Pa·m^3/(mol·K)
+
+def _srk_ab_pure(Tc: float, Pc: float) -> Tuple[float, float]:
+    # a0, b for SRK (constants per standard SRK form)
+    a0 = 0.42748 * (R**2) * (Tc**2) / Pc
+    b  = 0.08664 * R * Tc / Pc
+    return a0, b
+
+def _pr_ab_pure(Tc: float, Pc: float) -> Tuple[float, float]:
+    # a0, b for PR (constants per standard PR form)
+    a0 = 0.45723553 * (R**2) * (Tc**2) / Pc
+    b  = 0.07779607 * R * Tc / Pc
+    return a0, b
+
+def _m_srk(omega: float) -> float:
+    return 0.480 + 1.574*omega - 0.176*(omega**2)
+
+def _kappa_pr(omega: float) -> float:
+    return 0.37464 + 1.54226*omega - 0.26992*(omega**2)
+
+def _aT_srk(a0: float, m: float, T: float, Tc: float) -> float:
+    alpha = (1.0 + m*(1.0 - sqrt(T/Tc)))**2
+    return a0 * alpha
+
+def _aT_pr(a0: float, kappa: float, T: float, Tc: float) -> float:
+    alpha = (1.0 + kappa*(1.0 - sqrt(T/Tc)))**2
+    return a0 * alpha
+
+def _mix_a_b(kind: str, species: List[Dict[str, float]], Xi: List[float], T: float) -> Tuple[float, float]:
+    a_list, b_list = [], []
+    for sp in species:
+        Tc, Pc, omega = sp["Tc"], sp["Pc"], sp["omega"]
+        if kind == "srk":
+            a0, b = _srk_ab_pure(Tc, Pc)
+            aT = _aT_srk(a0, _m_srk(omega), T, Tc)
+        elif kind == "pr":
+            a0, b = _pr_ab_pure(Tc, Pc)
+            aT = _aT_pr(a0, _kappa_pr(omega), T, Tc)
+        else:
+            raise ValueError("Unknown kind")
+        a_list.append(aT); b_list.append(b)
+    # quadratic mixing for 'a'
+    a_mix = 0.0
+    for i in range(len(species)):
+        for j in range(len(species)):
+            a_mix += Xi[i]*Xi[j]*sqrt(a_list[i]*a_list[j])
+    # linear mixing for 'b'
+    b_mix = 0.0
+    for i in range(len(species)):
+        b_mix += Xi[i]*b_list[i]
+    return a_mix, b_mix
+
+@register("srk_mixture")
+def _factory_srk(params: Dict[str, Any]) -> EOS:
+    species = params["species"]  # [{name,Tc,Pc,omega,M}, ...]
+    Xi = params["Xi"]            # [x1, x2, ...], sum=1
+    if abs(sum(Xi)-1.0) > 1e-9: raise ValueError("Xi must sum to 1.0")
+    class SRK(EOS):
+        def evaluate(self, T: float, v: float) -> Dict[str, Any]:
+            a_mix, b_mix = _mix_a_b("srk", species, Xi, T)
+            P = R*T/(v - b_mix) - a_mix/(v*(v + b_mix))  # Eq.(2.2) SRK form
+            return {"P": P, "P_unit": "Pa", "inputs_unit": {"T": "K", "v": "m^3/mol"}}
+    return SRK()
+
+@register("pr_mixture")
+def _factory_pr(params: Dict[str, Any]) -> EOS:
+    species = params["species"]
+    Xi = params["Xi"]
+    if abs(sum(Xi)-1.0) > 1e-9: raise ValueError("Xi must sum to 1.0")
+    class PR(EOS):
+        def evaluate(self, T: float, v: float) -> Dict[str, Any]:
+            a_mix, b_mix = _mix_a_b("pr", species, Xi, T)
+            denom = (v*v + 2.0*b_mix*v - b_mix*b_mix)
+            P = R*T/(v - b_mix) - a_mix/denom  # Eq.(2.2) PR form
+            return {"P": P, "P_unit": "Pa", "inputs_unit": {"T": "K", "v": "m^3/mol"}}
+    return PR()

@@ -1,0 +1,8 @@
+{
+  "model": "helmholtz_ch4_setzmann_wagner",
+  "reference": "Setzmann & Wagner (1991) methane reference EOS",
+  "params": {
+    "units": { "T": "K", "rho": "kg·m^-3", "p": "Pa" },
+    "coeffs": {}
+  }
+}

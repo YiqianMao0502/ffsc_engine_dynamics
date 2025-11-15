@@ -1,0 +1,3 @@
+route,total_flow_kg_s,press_line_flow_kg_s,gas_hex_volume_m3,two_phase_hex_volume_m3
+fuel,149,1.94,0.0353,0.00377
+oxidizer,536,4.97,0.0589,0.00377

@@ -1,0 +1,374 @@
+{
+  "source": "Cantera gri30.yaml (GRI-Mech 3.0)",
+  "extracted_species": [
+    {
+      "name": "H2",
+      "thermo_NASA7": {
+        "model": "NASA7",
+        "T_ranges": [
+          200.0,
+          1000.0,
+          3500.0
+        ],
+        "coeffs": [
+          [
+            2.34433112,
+            0.00798052075,
+            -1.9478151e-05,
+            2.01572094e-08,
+            -7.37611761e-12,
+            -917.935173,
+            0.683010238
+          ],
+          [
+            3.3372792,
+            -4.94024731e-05,
+            4.99456778e-07,
+            -1.79566394e-10,
+            2.00255376e-14,
+            -950.158922,
+            -3.20502331
+          ]
+        ],
+        "note": "TPIS78"
+      },
+      "transport_Cantera": {
+        "model": "gas",
+        "geometry": "linear",
+        "well_depth": 38.0,
+        "diameter": 2.92,
+        "polarizability": 0.79,
+        "rotational_relaxation": 280.0,
+        "dipole": null
+      }
+    },
+    {
+      "name": "H",
+      "thermo_NASA7": {
+        "model": "NASA7",
+        "T_ranges": [
+          200.0,
+          1000.0,
+          3500.0
+        ],
+        "coeffs": [
+          [
+            2.5,
+            7.05332819e-13,
+            -1.99591964e-15,
+            2.30081632e-18,
+            -9.27732332e-22,
+            25473.6599,
+            -0.446682853
+          ],
+          [
+            2.50000001,
+            -2.30842973e-11,
+            1.61561948e-14,
+            -4.73515235e-18,
+            4.98197357e-22,
+            25473.6599,
+            -0.446682914
+          ]
+        ],
+        "note": "L7/88"
+      },
+      "transport_Cantera": {
+        "model": "gas",
+        "geometry": "atom",
+        "well_depth": 145.0,
+        "diameter": 2.05,
+        "polarizability": null,
+        "rotational_relaxation": null,
+        "dipole": null
+      }
+    },
+    {
+      "name": "O",
+      "thermo_NASA7": {
+        "model": "NASA7",
+        "T_ranges": [
+          200.0,
+          1000.0,
+          3500.0
+        ],
+        "coeffs": [
+          [
+            3.1682671,
+            -0.00327931884,
+            6.64306396e-06,
+            -6.12806624e-09,
+            2.11265971e-12,
+            29122.2592,
+            2.05193346
+          ],
+          [
+            2.56942078,
+            -8.59741137e-05,
+            4.19484589e-08,
+            -1.00177799e-11,
+            1.22833691e-15,
+            29217.5791,
+            4.78433864
+          ]
+        ],
+        "note": "L1/90\n GRI-Mech Version 3.0 Thermodynamics released 7/30/99\n NASA Polynomial format for CHEMKIN-II\n see README file for disclaimer"
+      },
+      "transport_Cantera": {
+        "model": "gas",
+        "geometry": "atom",
+        "well_depth": 80.0,
+        "diameter": 2.75,
+        "polarizability": null,
+        "rotational_relaxation": null,
+        "dipole": null
+      }
+    },
+    {
+      "name": "O2",
+      "thermo_NASA7": {
+        "model": "NASA7",
+        "T_ranges": [
+          200.0,
+          1000.0,
+          3500.0
+        ],
+        "coeffs": [
+          [
+            3.78245636,
+            -0.00299673416,
+            9.84730201e-06,
+            -9.68129509e-09,
+            3.24372837e-12,
+            -1063.94356,
+            3.65767573
+          ],
+          [
+            3.28253784,
+            0.00148308754,
+            -7.57966669e-07,
+            2.09470555e-10,
+            -2.16717794e-14,
+            -1088.45772,
+            5.45323129
+          ]
+        ],
+        "note": "TPIS89"
+      },
+      "transport_Cantera": {
+        "model": "gas",
+        "geometry": "linear",
+        "well_depth": 107.4,
+        "diameter": 3.458,
+        "polarizability": 1.6,
+        "rotational_relaxation": 3.8,
+        "dipole": null
+      }
+    },
+    {
+      "name": "OH",
+      "thermo_NASA7": {
+        "model": "NASA7",
+        "T_ranges": [
+          200.0,
+          1000.0,
+          3500.0
+        ],
+        "coeffs": [
+          [
+            3.99201543,
+            -0.00240131752,
+            4.61793841e-06,
+            -3.88113333e-09,
+            1.3641147e-12,
+            3615.08056,
+            -0.103925458
+          ],
+          [
+            3.09288767,
+            0.000548429716,
+            1.26505228e-07,
+            -8.79461556e-11,
+            1.17412376e-14,
+            3858.657,
+            4.4766961
+          ]
+        ],
+        "note": "RUS78"
+      },
+      "transport_Cantera": {
+        "model": "gas",
+        "geometry": "linear",
+        "well_depth": 80.0,
+        "diameter": 2.75,
+        "polarizability": null,
+        "rotational_relaxation": null,
+        "dipole": null
+      }
+    },
+    {
+      "name": "H2O",
+      "thermo_NASA7": {
+        "model": "NASA7",
+        "T_ranges": [
+          200.0,
+          1000.0,
+          3500.0
+        ],
+        "coeffs": [
+          [
+            4.19864056,
+            -0.0020364341,
+            6.52040211e-06,
+            -5.48797062e-09,
+            1.77197817e-12,
+            -30293.7267,
+            -0.849032208
+          ],
+          [
+            3.03399249,
+            0.00217691804,
+            -1.64072518e-07,
+            -9.7041987e-11,
+            1.68200992e-14,
+            -30004.2971,
+            4.9667701
+          ]
+        ],
+        "note": "L8/89"
+      },
+      "transport_Cantera": {
+        "model": "gas",
+        "geometry": "nonlinear",
+        "well_depth": 572.4,
+        "diameter": 2.605,
+        "polarizability": null,
+        "rotational_relaxation": 4.0,
+        "dipole": 1.844
+      }
+    },
+    {
+      "name": "CH4",
+      "thermo_NASA7": {
+        "model": "NASA7",
+        "T_ranges": [
+          200.0,
+          1000.0,
+          3500.0
+        ],
+        "coeffs": [
+          [
+            5.14987613,
+            -0.0136709788,
+            4.91800599e-05,
+            -4.84743026e-08,
+            1.66693956e-11,
+            -10246.6476,
+            -4.64130376
+          ],
+          [
+            0.074851495,
+            0.0133909467,
+            -5.73285809e-06,
+            1.22292535e-09,
+            -1.0181523e-13,
+            -9468.34459,
+            18.437318
+          ]
+        ],
+        "note": "L8/88"
+      },
+      "transport_Cantera": {
+        "model": "gas",
+        "geometry": "nonlinear",
+        "well_depth": 141.4,
+        "diameter": 3.746,
+        "polarizability": 2.6,
+        "rotational_relaxation": 13.0,
+        "dipole": null
+      }
+    },
+    {
+      "name": "CO",
+      "thermo_NASA7": {
+        "model": "NASA7",
+        "T_ranges": [
+          200.0,
+          1000.0,
+          3500.0
+        ],
+        "coeffs": [
+          [
+            3.57953347,
+            -0.00061035368,
+            1.01681433e-06,
+            9.07005884e-10,
+            -9.04424499e-13,
+            -14344.086,
+            3.50840928
+          ],
+          [
+            2.71518561,
+            0.00206252743,
+            -9.98825771e-07,
+            2.30053008e-10,
+            -2.03647716e-14,
+            -14151.8724,
+            7.81868772
+          ]
+        ],
+        "note": "TPIS79"
+      },
+      "transport_Cantera": {
+        "model": "gas",
+        "geometry": "linear",
+        "well_depth": 98.1,
+        "diameter": 3.65,
+        "polarizability": 1.95,
+        "rotational_relaxation": 1.8,
+        "dipole": null
+      }
+    },
+    {
+      "name": "CO2",
+      "thermo_NASA7": {
+        "model": "NASA7",
+        "T_ranges": [
+          200.0,
+          1000.0,
+          3500.0
+        ],
+        "coeffs": [
+          [
+            2.35677352,
+            0.00898459677,
+            -7.12356269e-06,
+            2.45919022e-09,
+            -1.43699548e-13,
+            -48371.9697,
+            9.90105222
+          ],
+          [
+            3.85746029,
+            0.00441437026,
+            -2.21481404e-06,
+            5.23490188e-10,
+            -4.72084164e-14,
+            -48759.166,
+            2.27163806
+          ]
+        ],
+        "note": "L7/88"
+      },
+      "transport_Cantera": {
+        "model": "gas",
+        "geometry": "linear",
+        "well_depth": 244.0,
+        "diameter": 3.763,
+        "polarizability": 2.65,
+        "rotational_relaxation": 2.1,
+        "dipole": null
+      }
+    }
+  ]
+}

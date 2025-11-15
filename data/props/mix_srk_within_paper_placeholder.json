@@ -1,0 +1,7 @@
+{
+  "model": "srk_mixture",
+  "params": {
+    "species": [ { "name": "CH4", "Tc": null, "Pc": null, "omega": null, "M": null } ],
+    "Xi": [ ]
+  }
+}

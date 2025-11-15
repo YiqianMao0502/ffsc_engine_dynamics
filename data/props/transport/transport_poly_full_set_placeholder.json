@@ -1,0 +1,15 @@
+{
+  "schema": "transport_poly_logT",
+  "note": "Fill ln(mu)=a ln T + b/T + c/T^2 + d and ln(lambda)=... per species; cite NASA TM-4513 or peer-reviewed.",
+  "species": [
+    { "name": "CH4", "mu": { "a": null, "b": null, "c": null, "d": null }, "lambda": { "a": null, "b": null, "c": null, "d": null }, "citation": "e.g., NASA TM-4513 — CH4" },
+    { "name": "O2",  "mu": { "a": null, "b": null, "c": null, "d": null }, "lambda": { "a": null, "b": null, "c": null, "d": null }, "citation": "e.g., NASA TM-4513 — O2" },
+    { "name": "H2O", "mu": { "a": null, "b": null, "c": null, "d": null }, "lambda": { "a": null, "b": null, "c": null, "d": null }, "citation": "..." },
+    { "name": "CO",  "mu": { "a": null, "b": null, "c": null, "d": null }, "lambda": { "a": null, "b": null, "c": null, "d": null }, "citation": "..." },
+    { "name": "CO2", "mu": { "a": null, "b": null, "c": null, "d": null }, "lambda": { "a": null, "b": null, "c": null, "d": null }, "citation": "..." },
+    { "name": "H2",  "mu": { "a": null, "b": null, "c": null, "d": null }, "lambda": { "a": null, "b": null, "c": null, "d": null }, "citation": "..." },
+    { "name": "OH",  "mu": { "a": null, "b": null, "c": null, "d": null }, "lambda": { "a": null, "b": null, "c": null, "d": null }, "citation": "..." },
+    { "name": "O",   "mu": { "a": null, "b": null, "c": null, "d": null }, "lambda": { "a": null, "b": null, "c": null, "d": null }, "citation": "..." },
+    { "name": "H",   "mu": { "a": null, "b": null, "c": null, "d": null }, "lambda": { "a": null, "b": null, "c": null, "d": null }, "citation": "..." }
+  ]
+}

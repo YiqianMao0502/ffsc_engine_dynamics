@@ -1,0 +1,12 @@
+{
+  "schema": "transport_poly_logT",
+  "equations": {
+    "mu": "ln(mu) = a ln T + b/T + c/T^2 + d",
+    "lambda": "ln(lambda) = a ln T + b/T + c/T^2 + d"
+  },
+  "units": { "mu": "Pa*s", "lambda": "W/m/K", "T": "K" },
+  "source": "e.g., NASA TM-4513 or species-specific peer-reviewed correlations; cite per-species.",
+  "species": [
+    { "name": "CH4", "mu": { "a": null, "b": null, "c": null, "d": null }, "lambda": { "a": null, "b": null, "c": null, "d": null }, "citation": "" }
+  ]
+}
