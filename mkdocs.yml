@@ -1,0 +1,45 @@
+site_name: FFSC Engine Dynamics Docs
+site_description: "ffsc_engine_dynamics 第二章实现的可导航文档"
+site_author: ffsc_engine_dynamics contributors
+repo_url: https://github.com/placeholder/ffsc_engine_dynamics
+site_url: https://placeholder.io/ffsc_engine_dynamics/docs
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.tabs
+    - content.code.copy
+    - content.action.edit
+    - search.highlight
+nav:
+  - 概览:
+      - 首页: index.md
+      - 快速开始: quickstart.md
+  - 实现细节:
+      - 架构概览: architecture.md
+      - Route-A 与 Route-B: route_modes.md
+      - 数据与接口: data_and_interfaces.md
+  - 仿真流程: simulation_guide.md
+  - 附录:
+      - Route-A 补充说明: route_A_readme.md
+      - 论文笔记索引: paper_notes/README.md
+      - 第49页笔记: paper_notes/chapter2_page49_notes.md
+      - 第51-60页笔记: paper_notes/chapter2_pages51_60_notes.md
+      - 第61-70页笔记: paper_notes/chapter2_pages61_70_notes.md
+      - 第71-80页笔记: paper_notes/chapter2_pages71_80_notes.md
+      - 第81-82页笔记: paper_notes/chapter2_pages81_82_notes.md
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - footnotes
+  - tables
+plugins:
+  - search

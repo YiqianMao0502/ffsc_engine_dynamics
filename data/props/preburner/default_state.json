@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "route": "Route-B",
+    "description": "Cantera HP equilibrium for an oxygen-rich CH4/O2 preburner tied to Raptor thrust/Isp targets.",
+    "source": [
+      "https://github.com/KSP-RO/RealismOverhaul/blob/master/GameData/RealismOverhaul/Engine_Configs/Raptor_Config.cfg",
+      "Cantera 3.0.0 (gri30.yaml)"
+    ]
+  },
+  "state": {
+    "p_Pa": 30000000.0,
+    "T_K": 2752.438310861322,
+    "rho_kg_per_m3": 39.00655758965906,
+    "composition_mass_fractions": {
+      "O2": 0.6480685295869226,
+      "CO": 0.0011218003794445847,
+      "CO2": 0.19012578928246127,
+      "H2O": 0.16068388075117157
+    }
+  },
+  "heat_loss_W": 1500000.0,
+  "source": {
+    "species_mass_generation": {
+      "O2": -87.593,
+      "CO": 0.744,
+      "CO2": 126.02,
+      "H2O": 106.505,
+      "CH4": -145.676
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "metadata": {
+    "route": "Route-B",
+    "description": "Impeller dimensions derived from Raptor mass-flow/head targets (RealismOverhaul Raptor_Config.cfg) using pump affinity laws.",
+    "source": "https://github.com/KSP-RO/RealismOverhaul/blob/master/GameData/RealismOverhaul/Engine_Configs/Raptor_Config.cfg"
+  },
+  "r_in": 0.02,
+  "r_out": 0.05,
+  "b_in": 0.018,
+  "b_out": 0.009,
+  "blade_angle_in": 0.87,
+  "blade_angle_out": 0.52
+}

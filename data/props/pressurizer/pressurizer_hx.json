@@ -1,0 +1,10 @@
+{
+  "metadata": {
+    "route": "Route-B",
+    "description": "UA / wall capacitance sized from Raptor-class pressurizer flow splits using Cantera cp values.",
+    "source": "Mass-flow targets from KSP-RO/RealismOverhaul Raptor_Config.cfg + Cantera 3.0.0 thermophysical properties"
+  },
+  "UA_W_per_K": 11500.0,
+  "wall_heat_capacity_J_per_K": 65000.0,
+  "initial_wall_temperature_K": 320.0
+}

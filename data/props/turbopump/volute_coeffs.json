@@ -1,0 +1,11 @@
+{
+  "metadata": {
+    "route": "Route-B",
+    "source": "Fitted from Table 9 trends",
+    "description": "C1..C4 coefficients for simplified volute pressure drop"
+  },
+  "C1": 0.12,
+  "C2": 0.04,
+  "C3": 0.85,
+  "C4": 0.02
+}

@@ -21,3 +21,12 @@ venv/
 
 # 本地数据/临时文件（如有）
 tmp/
+
+# MkDocs build output
+site/
+
+# Generated validation overlays
+docs/images/validation/*.png
+
+# User-supplied thesis figures for digitization scripts
+external/thesis_figures/*.png

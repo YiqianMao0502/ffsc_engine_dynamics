@@ -1,0 +1,10 @@
+{
+  "x_min": 95.0,
+  "x_max": 910.0,
+  "y_min": 60.0,
+  "y_max": 805.0,
+  "flow_min": 3.6,
+  "flow_max": 5.2,
+  "head_min": 550.0,
+  "head_max": 900.0
+}

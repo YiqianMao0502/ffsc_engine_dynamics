@@ -1,0 +1,8 @@
+{
+  "metadata": {
+    "route": "Route-B",
+    "description": "Hydraulic loss fitted so that efficiency at 32 krpm matches 0.75 target from Raptor_Config.cfg thrust data.",
+    "source": "https://github.com/KSP-RO/RealismOverhaul/blob/master/GameData/RealismOverhaul/Engine_Configs/Raptor_Config.cfg"
+  },
+  "k_h": 0.06
+}

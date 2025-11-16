@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "route": "Route-B",
+    "description": "Initial tank/plenum states consistent with Table 24 static point",
+    "source": "Estimated from FFSC steady-state balance"
+  },
+  "fuel": {
+    "T_K": 111.0,
+    "rho_mol_per_m3": 2.63e4
+  },
+  "oxidizer": {
+    "T_K": 90.0,
+    "rho_mol_per_m3": 3.56e4
+  },
+  "mix_plenum": {
+    "p_Pa": 3.8e6,
+    "T_K": 900.0,
+    "rho_kg_per_m3": 3.4
+  }
+}
